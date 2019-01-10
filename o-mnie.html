@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <!-- Regular data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Description -->
+    <meta name="author" content="Marcin Bawolski">
+    <meta name="description" content="Marcin Bawolski student uniwersytetu ekonomicznego w Poznaniu oraz początkujący frontend developer.">
+    <meta name="keywords" content="marcin,bawolski,frontend,portfolio,ui,graphic,design">
+    <!-- Open graph data -->
+    <meta property="og:site_name" content="Marcin Bawolski - Portfolio">
+    <meta property="og:title" content="Marcin Bawolski - Portfolio">
+    <meta property="og:description" content="Marcin Bawolski student uniwersytetu ekonomicznego w Poznaniu oraz początkujący frontend developer.">
+    <meta property="og:image" content="https://ecomon.pl/img/thumbnail.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ecomon.pl/">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Marcin Bawolski - Portfolio">
+    <meta name="twitter:description" content="Marcin Bawolski student uniwersytetu ekonomicznego w Poznaniu oraz początkujący frontend developer.">
+    <meta name="twitter:url" content="https://ecomon.pl/">
+    <meta name="twitter:image" content="https://ecomon.pl/img/thumbnail.png">
+    <link href="/img/thumbnail.png" type="image/png" rel="image_src">
+    <link rel='shortcut icon' type='image/x-icon' href='img/code.ico' />
+    <link rel="manifest" href="manifest.json">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128060455-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-128060455-1');
+    </script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="scss/main.css">
+    <title>Marcin Bawolski - Portfolio</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="bg bg-about" id="background">
+        </div>
+    </div>
+
+    <nav>
+        <ul id="main-navigation" class="main-nav">
+            <li id="logo"><a class="link" href="/index.html">home</a></li>
+            <li><a class="link active" href="/o-mnie.html" id="about">o mnie</a></li>
+            <li><a class="link" href="/technologie.html" id="tech">technologie</a></li>
+            <li><a class="link" href="/projekty.html" id="projects">projekty</a></li>
+            <li><a class="link" href="/kontakt.html" id="contact">kontakt</a></li>
+        </ul>
+        <span id="menu-button"><img src="img/menu-button.svg" alt=""></span>
+        <ul id="mobile-navigation" class="mobile-nav">
+            <span id="close-mobile">&times;</span>
+            <li><a class="mobile-link" href="/index.html" id="home-mobile">home</a></li>
+            <li><a class="mobile-link" href="/o-mnie.html" id="about-mobile">o mnie</a></li>
+            <li><a class="mobile-link" href="/technologie.html" id="tech-mobile">technologie</a></li>
+            <li><a class="mobile-link" href="/projekty.html" id="projects-mobile">projekty</a></li>
+            <li><a class="mobile-link" href="/kontakt.html" id="contact-mobile">kontakt</a></li>
+        </ul>
+    </nav>
+
+
+    <main class="about">
+        <div class="about-content">
+            <div class="card info">
+                <h2 class="about-title">Frontend developer, projektant stron internetowych i grafik</h1>
+                    <div class="description">
+                        <p class="about-description">
+                            Nazywam się Marcin Bawolski i jestem studentem 5 roku informatyki i ekonometrii na Uniwersytecie Ekonomicznym w Poznaniu.
+                        </p>
+                        <p class="about-description">
+                            Od ponad roku pasjonuję się tworzeniem stron internetowych, w lutym br. ukończyłem 3 miesięczny kurs na stronie udacity przygotowany we współpracy z google'm. Od tamtego czasu przeczytałem wiele książek o projektowaniu stron internetowych oraz programowaniu
+                            w javascirpcie, wykonałem również 2 projekty komercyjne.
+                        </p>
+                        <p class="about-description">
+                            Wcześniej zarówno zawodowo jak i hobbistycznie zajmowałem się projektowaniem grafiki komputerowej i animacji w oparciu o oprogramowanie firmy Adobe.
+                        </p>
+                        <p class="about-description">
+                            Obecnie uczę się React'a, a w przyszłości chciałbym budować aplikacje w oparciu o zestaw narzędzi MERN.
+                        </p>
+                    </div>
+            </div>
+            <div class="bio" id="bio">
+                <img src="img/mb.png" alt="Marcin Bawolski">
+                <div class="bio-info">
+                    <h2>Marcin Bawolski</h2>
+                    <h3>Poznań, Polska</h3>
+                    <h3><a id="bio-mail" href="mailto:bawolski.marcin@gmail.com">bawolski.marcin@gmail.com</a></h3>
+                    <h3><a href="tel:+48792847197" id="bio-tel">+48 792 847 197</a></h3>
+                </div>
+                <div class="bio-buttons">
+                    <a href="/download/Résumé.pdf" download>Pobierz CV</a>
+                    <!-- <a href="#" download>Pobierz rekomendacje</a> -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h6>&copy; Marcin Bawolski 2019</h6>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

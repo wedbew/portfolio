@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <!-- Regular data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Description -->
+    <meta name="author" content="Marcin Bawolski">
+    <meta name="description" content="Marcin Bawolski student uniwersytetu ekonomicznego w Poznaniu oraz początkujący frontend developer.">
+    <meta name="keywords" content="marcin,bawolski,frontend,portfolio,ui,graphic,design">
+    <!-- Open graph data -->
+    <meta property="og:site_name" content="Marcin Bawolski - Portfolio">
+    <meta property="og:title" content="Marcin Bawolski - Portfolio">
+    <meta property="og:description" content="Marcin Bawolski student uniwersytetu ekonomicznego w Poznaniu oraz początkujący frontend developer.">
+    <meta property="og:image" content="https://ecomon.pl/img/thumbnail.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ecomon.pl/">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Marcin Bawolski - Portfolio">
+    <meta name="twitter:description" content="Marcin Bawolski student uniwersytetu ekonomicznego w Poznaniu oraz początkujący frontend developer.">
+    <meta name="twitter:url" content="https://ecomon.pl/">
+    <meta name="twitter:image" content="https://ecomon.pl/img/thumbnail.png">
+    <link href="/img/thumbnail.png" type="image/png" rel="image_src">
+    <link rel='shortcut icon' type='image/x-icon' href='img/code.ico' />
+    <link rel="manifest" href="manifest.json">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128060455-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-128060455-1');
+    </script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="scss/main.css">
+    <title>Marcin Bawolski - Portfolio</title>
+</head>
+
+<body>
+    <div class="wrap" id="wrap-proj">
+        <div class="bg bg-proj" id="background"></div>
+    </div>
+
+    <nav>
+        <ul id="main-navigation" class="main-nav">
+            <li id="logo"><a class="link" href="/index.html">home</a></li>
+            <li><a class="link" href="/o-mnie.html" id="about">o mnie</a></li>
+            <li><a class="link" href="/technologie.html" id="tech">technologie</a></li>
+            <li><a class="link active" href="/projekty.html" id="projects">projekty</a></li>
+            <li><a class="link" href="/kontakt.html" id="contact">kontakt</a></li>
+        </ul>
+        <span id="menu-button"><img src="img/menu-button.svg" alt=""></span>
+        <ul id="mobile-navigation" class="mobile-nav">
+            <span id="close-mobile">&times;</span>
+            <li><a class="mobile-link" href="/index.html" id="home-mobile">home</a></li>
+            <li><a class="mobile-link" href="/o-mnie.html" id="about-mobile">o mnie</a></li>
+            <li><a class="mobile-link" href="/technologie.html" id="tech-mobile">technologie</a></li>
+            <li><a class="mobile-link" href="/projekty.html" id="projects-mobile">projekty</a></li>
+            <li><a class="mobile-link" href="/kontakt.html" id="contact-mobile">kontakt</a></li>
+        </ul>
+    </nav>
+
+
+    <main class="projects">
+        <div id="modal">
+            <div id="modal__content">
+                <span id="close__modal">&times;</span>
+                <div id="modal__info">
+                    <span><h3 id="modal__title"></h3>
+                    <p id="modal__description"></p></span>
+                    <span><h3 id="modal__link--title"></h3>
+                    <p id="modal__link"></p></span>
+                </div>
+                <div id="modal__gallery">
+                    <div id="image__container"><img id="main__image" src=""></div>
+                    <div id="thumbnail__container">
+                        <div class="thumbnail"><img id="first__image" src=""></div>
+                        <div class="thumbnail"><img id="second__image" src=""></div>
+                        <div class="thumbnail"><img id="third__image" src=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <figure data-aos="fade-up">
+                <img src="img/projekty/cv.jpg">
+                <figcaption>
+                    <div class="additional">
+                        <span><a href="#">CV</a></span>
+                    </div>
+                    <div class="hidden__infromation">
+                        <h3 class="hidden__title">Życiorys</h3>
+                        <p class="hidden__description">Projekty CV wykonane dla moich znajomych. Życiorysy zostały stworzone za pomocą Photoshop'a, Illustrator'a oraz Indesgin'a.</p>
+                        <h3 class="hidden__link--title"></h3>
+                        <a class="hidden__link" href=""></a>
+                    </div>
+                </figcaption>
+
+            </figure>
+            <figure data-aos="fade-up" data-aos-delay="50">
+                <img src="img/projekty/zniczomat.jpg">
+                <figcaption>
+                    <div class="additional">
+                        <span><a href="#">Strona WWW</a></span>
+                    </div>
+                    <div class="hidden__infromation">
+                        <h3 class="hidden__title"><a href="http://zniczomaty.com.pl/">Zniczomaty</a></h3>
+                        <p class="hidden__description">Projekt zrealizowany we współpracy z firmą karma, w oparciu o wcześniej przygotowany layout witryny. Do stworzenia strony użyłem HTML, CSS z wykorzystaniem SASS oraz Bootstrap, JavaScript z wykorzystaniem jQuery oraz prosty kod
+                            PHP do wysyłania danych z formularza.</p>
+                        <h3 class="hidden__link--title">Dodatkowe linki</h3>
+                        <p class="hidden__link">Zniczomaty</p>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure data-aos="fade-up" data-aos-delay="100">
+                <img src="img/projekty/wiltex.jpg">
+                <figcaption>
+                    <div class="additional">
+                        <span><a href="#">Wizytówka</a></span>
+                    </div>
+                    <div class="hidden__infromation">
+                        <h3 class="hidden__title">Wiltex</h3>
+                        <p class="hidden__description">Projekt obejmował przygotowanie nowego loga oraz unowocześnienie obecnie używanego. Realizacja obejmowała również zaprojektowanie wizytówek dla pracowników oraz cennika.</p>
+                        <h3 class="hidden__link--title">Pliki do pobrania:</h3>
+                        <p class="hidden__link">Wiltex</p>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure data-aos="fade-up" data-aos-delay="150">
+                <img src="img/projekty/edutoria.jpg">
+                <figcaption>
+                    <div class="additional">
+                        <span><a href="#">Strona WWW</a></span>
+                    </div>
+                    <div class="hidden__infromation">
+                        <h3 class="hidden__title"><a href="http://edutoria.pl/">Edutoria</a></h3>
+                        <p class="hidden__description">Projekt zrealizowany we współpracy z firmą karma. Na podstawie wcześniej przygotowanego designu strony internetowej wykorzystując HTML, CSS, Bootsrtap'a oraz prostego JS'a i PHP stworzyłem witrynę firmy oferującej oprogramowanie
+                            dla edukacji.
+                        </p>
+                        <h3 class="hidden__link--title">Dodatkowe linki</h3>
+                        <p class="hidden__link">Edutoria</p>
+                    </div>
+                </figcaption>
+
+            </figure>
+            <figure data-aos="fade-up" data-aos-delay="200">
+                <img src="img/projekty/renoverend.jpg">
+                <figcaption>
+                    <div class="additional">
+                        <span><a href="#">Logo</a></span>
+                    </div>
+                    <div class="hidden__infromation">
+                        <h3 class="hidden__title">Renoverend</h3>
+                        <p class="hidden__description">Projekt zrealizowany dla holenderskiej firmy z branży budowlanej. Realizacja opierała się o unowocześnienie obecnie używanego logo oraz propozycje jego minimalistycznej wersji.</p>
+                        <h3 class="hidden__link--title">Pliki do pobrania:</h3>
+                        <p class="hidden__link">Renoverend</p>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure data-aos="fade-up" data-aos-delay="250">
+                <img id="kurt-image" src="img/projekty/kurt.jpg">
+                <figcaption>
+                    <div class="additional">
+                        <span><a href="#">Logo</a></span>
+                    </div>
+                    <div class="hidden__infromation">
+                        <h3 class="hidden__title">Logo</h3>
+                        <p class="hidden__description">Jedna z pierwszych prac obejmująca zaprojektowanie oraz zwizualizowanie logo. Projekt wykonałem tuż po ukończeniu czytania książek do nauki Illustator'a oraz Indesign'a w celu przećwiczenia nowych umiejętności.</p>
+                        <h3 class="hidden__link--title"></h3>
+                        <a class="hidden__link" href=""></a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure data-aos="fade-up" data-aos-delay="300">
+                <img id="yt-image" src="img/projekty/yt.jpg">
+                <figcaption>
+                    <div class="additional">
+                        <span><a href="#">Animacja</a></span>
+                    </div>
+                    <div class="hidden__infromation">
+                        <h3 class="hidden__title">Animacja</h3>
+                        <p class="hidden__description">Pierwszy projekt zrealizowany za pomocą After Effects'a. Animacja zawiera porównanie Stanów Zjednoczonych, Japonii oraz Szwajcarii m.in. pod względem bezpieczeństwa i siły nabywczej średniej pensji. Na youtube film posiada ponad
+                            50 tysięcy odsłon.</p>
+                        <h3 class="hidden__link--title"></h3>
+                        <a class="hidden__link" href=""></a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure data-aos="fade-up" data-aos-delay="350">
+                <img src="img/projekty/cookies.jpg">
+                <figcaption>
+                    <div class="additional">
+                        <span><a href="#">Mockup</a></span>
+                    </div>
+                    <div class="hidden__infromation">
+                        <h3 class="hidden__title">Projekt opakowania</h3>
+                        <p class="hidden__description">Projekt opakowania nowego produktu spożywczego zrealizowany na zaliczenie przedmiotu na Uniwersytecie Ekonomicznym w Poznaniu. Projekt obejmuje logo, layout oraz mockup który powstał w oparciu o autorskie zdjęcie.</p>
+                        <h3 class="hidden__link--title">Pliki do pobrania</h3>
+                        <p class="hidden__link">Projekt opakowania</p>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure data-aos="fade-up" data-aos-delay="400">
+                <img id="budmar-image" src="img/projekty/budmar.jpg">
+                <figcaption>
+                    <div class="additional">
+                        <span><a href="#">Logo</a></span>
+                    </div>
+                    <div class="hidden__infromation">
+                        <h3 class="hidden__title">Budmar</h3>
+                        <p class="hidden__description">Projekt logo przygotowany dla firmy z branży budowalnej.</p>
+                        <h3 class="hidden__link--title"></h3>
+                        <a class="hidden__link" href=""></a>
+                    </div>
+                </figcaption>
+            </figure>
+            <figure data-aos="fade-up" data-aos-delay="450">
+                <img id="annas-image" src="img/projekty/Annas.jpg">
+                <figcaption>
+                    <div class="additional">
+                        <span><a href="#">Animacja</a></span>
+                    </div>
+                    <div class="hidden__infromation">
+                        <h3 class="hidden__title">Annas Pflegedienst</h3>
+                        <p class="hidden__description">Animacja reklamowa dla niemieckiej firmy zajmującej się opieką nad osobami starszymi.</p>
+                        <h3 class="hidden__link--title"></h3>
+                        <a class="hidden__link" href=""></a>
+                    </div>
+                </figcaption>
+            </figure>
+        </div>
+    </main>
+
+    <footer>
+        <h6>&copy; Marcin Bawolski 2019</h6>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

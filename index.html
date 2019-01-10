@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <!-- Regular data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Description -->
+    <meta name="author" content="Marcin Bawolski">
+    <meta name="description" content="Marcin Bawolski student uniwersytetu ekonomicznego w Poznaniu oraz początkujący frontend developer.">
+    <meta name="keywords" content="marcin,bawolski,frontend,portfolio,ui,graphic,design">
+    <!-- Open graph data -->
+    <meta property="og:site_name" content="Marcin Bawolski - Portfolio">
+    <meta property="og:title" content="Marcin Bawolski - Portfolio">
+    <meta property="og:description" content="Marcin Bawolski student uniwersytetu ekonomicznego w Poznaniu oraz początkujący frontend developer.">
+    <meta property="og:image" content="https://ecomon.pl/img/thumbnail.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ecomon.pl/">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Marcin Bawolski - Portfolio">
+    <meta name="twitter:description" content="Marcin Bawolski student uniwersytetu ekonomicznego w Poznaniu oraz początkujący frontend developer.">
+    <meta name="twitter:url" content="https://ecomon.pl/">
+    <meta name="twitter:image" content="https://ecomon.pl/img/thumbnail.png">
+    <link href="/img/thumbnail.png" type="image/png" rel="image_src">
+    <link rel='shortcut icon' type='image/x-icon' href='img/code.ico' />
+    <link rel="manifest" href="manifest.json">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128060455-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-128060455-1');
+    </script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="scss/main.css">
+    <title>Marcin Bawolski - Portfolio</title>
+</head>
+
+<body>
+
+    <div class="wrap">
+        <div class="bg bg-home" id="background">
+        </div>
+    </div>
+
+    <nav>
+        <ul id="main-navigation" class="main-nav">
+            <li id="logo"><a class="link active" href="/index.html">home</a></li>
+            <li><a class="link" href="/o-mnie.html" id="about">o mnie</a></li>
+            <li><a class="link" href="/technologie.html" id="tech">technologie</a></li>
+            <li><a class="link" href="/projekty.html" id="projects">projekty</a></li>
+            <li><a class="link" href="/kontakt.html" id="contact">kontakt</a></li>
+        </ul>
+        <span id="menu-button"><img src="img/menu-button.svg" alt=""></span>
+        <ul id="mobile-navigation" class="mobile-nav">
+            <span id="close-mobile">&times;</span>
+            <li><a class="mobile-link" href="/index.html" id="home-mobile">home</a></li>
+            <li><a class="mobile-link" href="/o-mnie.html" id="about-mobile">o mnie</a></li>
+            <li><a class="mobile-link" href="/technologie.html" id="tech-mobile">technologie</a></li>
+            <li><a class="mobile-link" href="/projekty.html" id="projects-mobile">projekty</a></li>
+            <li><a class="mobile-link" href="/kontakt.html" id="contact-mobile">kontakt</a></li>
+        </ul>
+    </nav>
+
+
+    <main class="home-page">
+        <div class="card">
+            <div class="card__content">
+                <div class="card__front">
+                    <h3 class="card__front__title">
+                        <span class="dark__blue">class</span> <span class="green">Developer</span> = { <br />
+                        <span class="dark__blue left__margin">constructor</span> (<span class="blue">name</span>, <span class="blue">surname</span>, <span class="blue">tech</span>) { <br />
+                        <span class="dark__blue left__margin__extend">this</span>.<span class="blue">name</span> = <span class="blue">name</span>;<br />
+                        <span class="dark__blue left__margin__extend">this</span>.<span class="blue">surname</span> = <span class="blue">surname</span>;<br />
+                        <span class="dark__blue left__margin__extend">this</span>.<span class="blue">tech</span> = <span class="blue">tech</span>;<br /> }};
+                    </h3>
+                    <h3 class="card__front__subtitle" id="typed">
+                    </h3>
+                </div>
+                <div class="card__back">
+                    <h3 class="card__back__title">Marcin Bawolski</h3>
+                    <p class="card__back__subtitle">grafik</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <h6>&copy; Marcin Bawolski 2019</h6>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+    <script src="http://cookiealert.sruu.pl/CookieAlert-latest.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

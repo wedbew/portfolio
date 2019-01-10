@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <!-- Regular data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Description -->
+    <meta name="author" content="Marcin Bawolski">
+    <meta name="description" content="Marcin Bawolski student uniwersytetu ekonomicznego w Poznaniu oraz początkujący frontend developer.">
+    <meta name="keywords" content="marcin,bawolski,frontend,portfolio,ui,graphic,design">
+    <!-- Open graph data -->
+    <meta property="og:site_name" content="Marcin Bawolski - Portfolio">
+    <meta property="og:title" content="Marcin Bawolski - Portfolio">
+    <meta property="og:description" content="Marcin Bawolski student uniwersytetu ekonomicznego w Poznaniu oraz początkujący frontend developer.">
+    <meta property="og:image" content="https://ecomon.pl/img/thumbnail.png">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ecomon.pl/">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Marcin Bawolski - Portfolio">
+    <meta name="twitter:description" content="Marcin Bawolski student uniwersytetu ekonomicznego w Poznaniu oraz początkujący frontend developer.">
+    <meta name="twitter:url" content="https://ecomon.pl/">
+    <meta name="twitter:image" content="https://ecomon.pl/img/thumbnail.png">
+    <link href="/img/thumbnail.png" type="image/png" rel="image_src">
+    <link rel='shortcut icon' type='image/x-icon' href='img/code.ico' />
+    <link rel="manifest" href="manifest.json">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128060455-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-128060455-1');
+    </script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="scss/main.css">
+    <title>Marcin Bawolski - Portfolio</title>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="bg bg-contact" id="background">
+        </div>
+    </div>
+
+    <nav id="nav-contact">
+        <ul id="main-navigation" class="main-nav">
+            <li id="logo"><a class="link" href="/index.html">home</a></li>
+            <li><a class="link" href="/o-mnie.html" id="about">o mnie</a></li>
+            <li><a class="link" href="/technologie.html" id="tech">technologie</a></li>
+            <li><a class="link" href="/projekty.html" id="projects">projekty</a></li>
+            <li><a class="link active" href="/kontakt.html" id="contact">kontakt</a></li>
+        </ul>
+        <span id="menu-button" aria-label="menu"><img src="img/menu-button.svg" alt=""></span>
+        <ul id="mobile-navigation" class="mobile-nav">
+            <span id="close-mobile">&times;</span>
+            <li><a class="mobile-link" href="/index.html" id="home-mobile">home</a></li>
+            <li><a class="mobile-link" href="/o-mnie.html" id="about-mobile">o mnie</a></li>
+            <li><a class="mobile-link" href="/technologie.html" id="tech-mobile">technologie</a></li>
+            <li><a class="mobile-link" href="/projekty.html" id="projects-mobile">projekty</a></li>
+            <li><a class="mobile-link" href="/kontakt.html" id="contact-mobile">kontakt</a></li>
+        </ul>
+    </nav>
+
+    <main class="contact">
+        <form class="contact__form" id="contactForm">
+            <div class="form__left__half">
+                <label for="name">Imię i nazwisko:</label>
+                <input type="text" autocomplete="name" placeholder="Imię i nazwisko" id="nameInput" aria-required="true" name="name">
+                <label for="mail">E-mail:</label>
+                <input type="text" autocomplete="email" placeholder="E-mail" id="emailInput" aria-required="true" name="email">
+                <label for="mail">Organizacja:</label>
+                <input type="text" autocomplete="organization" placeholder="Organizacja" id="orgInput" aria-required="false" name="org">
+            </div>
+            <div class="form__right__half">
+                <label for="message">Wiadomość:</label>
+                <textarea name="msg" id="messageInput" placeholder="Wiadomość"></textarea>
+            </div>
+            <div class="form__submit">
+                <input type="submit" name="submit" id="submit" value="Wyślij">
+            </div>
+            <h3 id="msgSubmit">Wiadomość została wysłana</h3>
+        </form>
+    </main>
+
+    <footer>
+        <h6>&copy; Marcin Bawolski 2019</h6>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
